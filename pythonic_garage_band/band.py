@@ -3,6 +3,9 @@ class Band():
         self.name = name
         self.members = members
 
+    def __str__(self):
+        return f"{self.name}"
+
 
 # base class
 class Musician():
@@ -17,8 +20,13 @@ class Musician():
         return f"My name is {self.name} and I play {self.instrument}"
 
     def __repr__(self):
-        return f"{type} instance. Name = {name}"
+        return f"{self.type} instance. Name = {self.name}"
 
+    def band_Memeber(self):
+        return f"{self.name}"
+
+    def get_instrument(self):
+        return f"{self.instrument}"
 
 
 class Guitarist(Musician):
